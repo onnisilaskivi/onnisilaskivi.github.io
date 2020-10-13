@@ -55,9 +55,11 @@ nav ul li a:hover, nav ul li a:active{
 /* HEADER */
 
 .main-header{
-    background: #ffffff url("digit_hero.jpg") no-repeat center center;
-    background-size: cover;
-    height: 40vh;
+    background-image: url("naamakuvamäjii.jpg"), url(programming-languages.jpg), url(puutausta.jpg);
+    background-position: left center, right center, center bottom;
+    background-size: 27.5% 100%, 27.5% 100%, 45% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height: 55vh;
 }
 
 .main-header hgroup{
@@ -67,7 +69,6 @@ nav ul li a:hover, nav ul li a:active{
     align-items: center;
     text-align: center;
     height: 100%;
-    backdrop-filter: blur(1px);
     color: var(--white);
     text-shadow: -0.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
 }
