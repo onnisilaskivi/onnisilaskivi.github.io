@@ -1,0 +1,112 @@
+:root{
+    --yellow: #fecd32;
+    --black: #000000;
+    --white: #f2f2f2;
+    --gray: #2f2f2f;
+    --blue: #2c3e50;
+
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+section{
+    scroll-margin-top: 35px;
+    padding: 20px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--yellow);
+    z-index: 1;
+}
+
+nav ul{
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    color: var(--black);
+    transition: font-size 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:active{
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+
+.main-header{
+    background: #ffffff url("digit_hero.jpg") no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.main-header hgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    color: var(--white);
+    text-shadow: -0.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+}
+
+.main-header hgroup h2{
+    font-size: 1em;
+}
+
+/* SECTIONS */
+
+#about, #contact{
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+#education, #projects{
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+#experience{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#contact a{
+    color: var(--white);
+}
+
+.social{
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    background-color: var(--black);
+    padding: 10px;
+    color: var(--white);
+    text-align: center;
+}
